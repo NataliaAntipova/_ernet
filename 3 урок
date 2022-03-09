@@ -1,0 +1,105 @@
+﻿using System;
+
+namespace _3_urok
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Console.WriteLine("Введите число");
+            int N = Int32.Parse(Console.ReadLine());
+            for (int counter = 1; counter <= N; counter += 3)
+            {
+                Console.WriteLine($"Счетчик: {counter}");
+
+            }
+            Console.ReadKey();*/
+
+            /*Console.WriteLine("Введите число");
+            int i = Int32.Parse(Console.ReadLine());
+            for (int counter = 1; counter <= i; counter++)
+                {
+                
+                Console.Write($" {counter} ");
+                }
+            for (int counter = i-1; counter >= 1; counter--)
+            {
+
+                Console.Write($" {counter} ");
+            }
+            Console.ReadKey();*/
+
+            /* Console.WriteLine("Введите число");
+             int a = 0;
+             int b = 0;
+             for (int i = 1; i <= 10; i++)
+             {
+
+                 int c = Int32.Parse(Console.ReadLine());
+
+                 if (c > 0)
+                 {
+                     a++;
+
+                 }
+                 if (c < 0)
+                 {
+                     b++;
+                 }
+             }
+             Console.WriteLine("Положительных чисел: " + a);
+             Console.WriteLine("Отрицательных чисел: " + b);
+             Console.ReadKey();*/
+
+            /*int sum;
+            sum = 0;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                int c = Int32.Parse(Console.ReadLine());
+                sum += c;
+            }
+            Console.WriteLine(sum);*/
+
+            /* int sum;
+             sum = 0;
+
+             for (int i = 1; i <= 19; i+=2)
+             {
+                 sum += i;
+             }
+             Console.WriteLine("сумма = " + sum);*/
+
+            /*double product = 1.0;
+            for (int i = 1; i <= 10; i++)
+            {
+                Double.Parse(Console.ReadLine());
+                product *= i;
+            }
+            Console.WriteLine(product); */
+
+            /*int x;
+            int y;
+            for (x = 2; x < 8; x++)
+                {
+                for (y = 2; y < 5; y++)
+                {
+                    Console.WriteLine("z(x,y) = " + Math.Pow(x, y));
+
+                }
+                }
+            */
+
+            /*int x;
+            int y;
+            for (x = 30; x < 33; x++)
+            { 
+                for (y = 1; y < 5; y++)
+                {
+                    Console.WriteLine("z(x,y) = " + (x-y));
+
+                }
+            }*/
+        }
+    }
+}
