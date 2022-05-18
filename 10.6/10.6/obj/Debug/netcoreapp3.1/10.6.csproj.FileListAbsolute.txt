@@ -1,0 +1,14 @@
+S:\ИСП 211\Jija\10\10.6\10.6\bin\Debug\netcoreapp3.1\10.6.exe
+S:\ИСП 211\Jija\10\10.6\10.6\bin\Debug\netcoreapp3.1\10.6.deps.json
+S:\ИСП 211\Jija\10\10.6\10.6\bin\Debug\netcoreapp3.1\10.6.runtimeconfig.json
+S:\ИСП 211\Jija\10\10.6\10.6\bin\Debug\netcoreapp3.1\10.6.runtimeconfig.dev.json
+S:\ИСП 211\Jija\10\10.6\10.6\bin\Debug\netcoreapp3.1\10.6.dll
+S:\ИСП 211\Jija\10\10.6\10.6\bin\Debug\netcoreapp3.1\10.6.pdb
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.GeneratedMSBuildEditorConfig.editorconfig
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.AssemblyInfoInputs.cache
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.AssemblyInfo.cs
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.csproj.CoreCompileInputs.cache
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.dll
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.pdb
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.genruntimeconfig.cache
+S:\ИСП 211\Jija\10\10.6\10.6\obj\Debug\netcoreapp3.1\10.6.csproj.AssemblyReference.cache
