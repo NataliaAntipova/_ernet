@@ -1,0 +1,7 @@
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\bin\Debug\urok10_2.exe.config
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\bin\Debug\urok10_2.exe
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\bin\Debug\urok10_2.pdb
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\obj\Debug\urok10_2.csprojAssemblyReference.cache
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\obj\Debug\urok10_2.csproj.CoreCompileInputs.cache
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\obj\Debug\urok10_2.exe
+C:\Users\mzhukova\source\repos\urok10_2\urok10_2\obj\Debug\urok10_2.pdb
