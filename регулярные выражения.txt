@@ -1,0 +1,226 @@
+// Файл 11.
+// Задание 1.
+/*
+Console.WriteLine("Введите символ.");
+char c = char.Parse(Console.ReadLine());
+Console.WriteLine("Введите строку.");
+string s = Console.ReadLine();
+
+Console.WriteLine(BetweenChars(c, s));
+
+Console.ReadKey();
+*/
+
+// Задание 2.
+/*
+Console.WriteLine("Введите символ.");
+char c = char.Parse(Console.ReadLine());
+Console.WriteLine("Введите строку.");
+string s = Console.ReadLine();
+
+Console.WriteLine("Проверка с помощью метода:");
+CheckString1(s, c);
+Console.WriteLine("Проверка с помощью цикла:");
+CheckString2(s, c);
+
+Console.ReadKey();
+*/
+
+// Задание 3.
+/*
+Console.WriteLine("Введите подстроку.");
+string c = Console.ReadLine();
+Console.WriteLine("Введите строку.");
+string s = Console.ReadLine();
+
+int count = CountInText(s, c);
+Console.WriteLine($"Строка \"{s}\" содержит {count} вхождений \"{c}\"");
+
+Console.ReadKey();
+*/
+
+// Задание 4.
+/*
+Console.WriteLine("Введите символ.");
+char c = char.Parse(Console.ReadLine());
+Console.WriteLine("Введите строку.");
+string s = Console.ReadLine();
+
+string result = RemoveBetweenChars(s, c);
+
+Console.WriteLine($"Результат для строки \"{s}\" и символа '{c}': \"{result}\"");
+
+Console.ReadKey();
+*/
+
+// Задание 5.
+/*
+Console.WriteLine("Введите подстроку.");
+StringBuilder c = new StringBuilder(Console.ReadLine());
+Console.WriteLine("Введите строку.");
+StringBuilder s = new StringBuilder(Console.ReadLine());
+
+int raz = 0;
+
+if(c.Length > s.Length)
+{
+raz = c.Length - s.Length;
+Console.WriteLine($"Дополненная строка:\n{AddSpaces(s, raz)}.");
+} else if(s.Length > c.Length)
+{
+raz = s.Length - c.Length;
+Console.WriteLine($"Дополненная строка:\n{AddSpaces(c, raz)}.");
+}
+else
+{
+Console.WriteLine("Строки одинаковы по длине.");
+}
+
+Console.ReadKey();
+*/
+
+// Задание 6.
+/*
+string s = Console.ReadLine();
+char c = char.Parse(Console.ReadLine());
+
+Console.WriteLine($"Результат вычисления с операцией {c}: {Calculate(s, c)}");
+
+Console.ReadKey();
+*/
+
+// Файл 12.
+// Задание 1.
+/*
+Debug.Assert(isCorrectDate("45-12-1990"));
+Debug.Assert(isCorrectDate("12-03-1990"));
+Debug.Assert(isCorrectDate("12/12/1990"));
+
+Console.WriteLine("Тесты пройдены");
+Console.ReadKey();
+*/
+
+// Задание 2.
+/*
+Console.WriteLine("Введите строку со смайликами.");
+
+string s = Console.ReadLine();
+
+Console.WriteLine($"Количество смайликов в строке: {isContainsEmoji(s)}");
+
+Console.ReadKey();
+*/
+
+}
+
+private static int isContainsEmoji(string s)
+{
+var m = Regex.Matches(s, @"[:;]-*[\[\]\)\(]");
+return m.Count;
+}
+
+private static bool isCorrectDate(string date)
+{
+return Regex.IsMatch(date, @"^[0-3]\d-[0-1]\d-\d\d\d\d$");
+}
+
+private static float Calculate(string s, char c)
+{
+string[] a = s.Split(' ');
+switch (c)
+{
+case '+':
+return int.Parse(a[0]) + int.Parse(a[1]);
+case '-':
+return int.Parse(a[0]) - int.Parse(a[1]);
+case '*':
+return int.Parse(a[0]) * int.Parse(a[1]);
+case '/':
+return int.Parse(a[0]) / int.Parse(a[1]);
+default:
+return 0;
+}
+}
+
+private static StringBuilder AddSpaces(StringBuilder s, int amount)
+{
+for(int i = 0; i < amount; i++)
+{
+s.Append(" ");
+}
+
+return s;
+}
+
+private static string RemoveBetweenChars(string s, char c)
+{
+if (s.Contains(c))
+{
+return s.Remove(s.IndexOf(c), s.Length - s.IndexOf(c, s.IndexOf(c)));
+}
+else
+{
+return s;
+}
+}
+
+private static int CountInText(string s, string p)
+{
+int counter = 0;
+
+for(int i = 0; i < s.Length; i++)
+{
+if (s[i] == p[0] && s[i + 1] == p[1])
+{
+counter++;
+}
+
+}
+
+return counter;
+}
+
+private static void CheckString1(string s, char c)
+{
+if (s.Contains(c))
+{
+Console.WriteLine($"Символ \"{c}\" присутствует в строке \"{s}\"");
+}
+else
+{
+Console.WriteLine($"Символ \"{c}\" не присутствует в строке \"{s}\"");
+}
+}
+
+private static void CheckString2(string s, char c)
+{
+bool b = false;
+
+for(int i = 0; i < s.Length; i++)
+{
+if(s[i] == c)
+{
+b = true;
+break;
+}
+}
+
+if (b)
+{
+Console.WriteLine($"Символ \"{c}\" присутствует в строке \"{s}\"");
+}
+else
+{
+Console.WriteLine($"Символ \"{c}\" не присутствует в строке \"{s}\"");
+}
+}
+
+private static string BetweenChars(char c, string s)
+{
+int first_index = s.IndexOf(c);
+int last_index = s.LastIndexOf(c);
+
+string result = s.Substring(first_index + 1, last_index - 1);
+
+return result;
+}
